@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Laboratório</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <h1>Controle de Entrada e Saída</h1>
+        <div id="form-container">
+            <h2>Registrar Entrada</h2>
+            <form id="form-entrada">
+                <label for="input-matricula">Matrícula do Aluno:</label>
+                <input type="text" id="input-matricula" placeholder="Digite a matrícula" required>
+
+                <label for="select-recurso">Recurso a ser utilizado:</label>
+                <select id="select-recurso" required>
+                    <option value="">Carregando recursos...</option>
+                </select>
+
+                <button type="submit">Registrar Entrada</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="status-container">
+            <h2>Alunos no Laboratório</h2>
+            <table border="1" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Aluno</th>
+                        <th>Matrícula</th>
+                        <th>Recurso</th>
+                        <th>Entrada</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-status">
+                </tbody>
+            </table>
+        </div>
+
+        </body>
+    </html>
